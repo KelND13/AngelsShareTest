@@ -16,14 +16,13 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-            searchBar.showsCancelButton = true
-        }
+        createSearchBar()
         
-        func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-            searchBar.showsCancelButton = false
-        }
+    }
     
+    func createSearchBar() {
+        searchBar.placeholder = "Search whiskeys"
+        searchBar.delegate = self
         
     }
 
@@ -31,7 +30,11 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // Dismiss the keyboard after typing:
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
 }
 
