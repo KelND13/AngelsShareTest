@@ -11,16 +11,21 @@ import UIKit
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     let searchBar = UISearchBar()
-    let tableData = ["Oban", "Mckenzie", "four roses", "Whistlepig"]
+    let tableData = ["Oban", "Mckenzie", "Four roses", "Whistlepig"]
     
-    //vars for searching:
+    // Variables for searching:
     var filteredArray = [String]()
     var shouldShowSearchResults = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set up the searchbar view:
+        
         createSearchBar()
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,7 +36,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     func createSearchBar() {
 
         searchBar.showsCancelButton = false
-        searchBar.placeholder = "Search whiskeys"
+        searchBar.placeholder = "Search"
         searchBar.delegate = self
         
         self.navigationItem.titleView = searchBar
@@ -42,11 +47,10 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //functions for adding search functionality
-    
+    // Functions for adding search functionality:
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredArray = tableData.filter({ (names: String) -> Bool in
-                return names.range(of: searchText) != nil
+        filteredArray = tableData.filter({ (whiskeys: String) -> Bool in
+                return whiskeys.range(of: searchText) != nil
         })
         
         if searchText != "" {
@@ -86,12 +90,10 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         } else {
             cell.textLabel?.text = tableData[indexPath.row]
             return cell
-
         }
-        // Configure the cell...
     }
     
-    // Dismisses the keyboard two ways:
+    // Dismiss the searchbar keyboard two ways:
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         searchBar.endEditing(true)
     }

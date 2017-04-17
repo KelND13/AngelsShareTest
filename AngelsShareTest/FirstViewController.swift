@@ -16,18 +16,6 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // Set up search bar:
-//        func createSearchBar() {
-//            searchBar.showsCancelButton = false
-//            searchBar.placeholder = "Search whiskeys"
-//            searchBar.delegate = self
-//            
-//            self.navigationItem.titleView = searchBar
-//        }
-//        
-//        // creates the search bar when the app loads:
-//        createSearchBar()
-        
         func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
             searchBar.showsCancelButton = true
         }
