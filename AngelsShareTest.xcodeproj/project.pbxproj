@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B11084C0BF6C2941C46B236 /* libPods-AngelsShareTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E84204FA96A38F024EA /* libPods-AngelsShareTest.a */; };
+		D57DB1EE1EA5441300A2A7F1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */; };
 		D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */; };
 		D5FF1A6A1E9FAEF7009528A1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A691E9FAEF7009528A1 /* FirstViewController.swift */; };
 		D5FF1A6C1E9FAEF7009528A1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		03781E84204FA96A38F024EA /* libPods-AngelsShareTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AngelsShareTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12936E7F121CD380A7E69C06 /* Pods-AngelsShareTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelsShareTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelsShareTest/Pods-AngelsShareTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		D5FF1A641E9FAEF6009528A1 /* AngelsShareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelsShareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5FF1A691E9FAEF7009528A1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				D5FF1A691E9FAEF7009528A1 /* FirstViewController.swift */,
 				D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */,
 				D5FF1A6D1E9FAEF7009528A1 /* Main.storyboard */,
+				D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */,
 				D5FF1A701E9FAEF7009528A1 /* Assets.xcassets */,
 				D5FF1A721E9FAEF7009528A1 /* LaunchScreen.storyboard */,
 				D5FF1A751E9FAEF7009528A1 /* Info.plist */,
@@ -343,6 +346,7 @@
 				D5FF1A6C1E9FAEF7009528A1 /* SecondViewController.swift in Sources */,
 				D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */,
 				D5FF1A6A1E9FAEF7009528A1 /* FirstViewController.swift in Sources */,
+				D57DB1EE1EA5441300A2A7F1 /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +599,7 @@
 				D5FF1A901E9FAEF7009528A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5FF1A911E9FAEF7009528A1 /* Build configuration list for PBXNativeTarget "AngelsShareTestTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +608,7 @@
 				D5FF1A931E9FAEF7009528A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5FF1A941E9FAEF7009528A1 /* Build configuration list for PBXNativeTarget "AngelsShareTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +617,7 @@
 				D5FF1A961E9FAEF7009528A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
