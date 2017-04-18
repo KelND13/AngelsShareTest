@@ -11,7 +11,7 @@ import UIKit
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     let searchBar = UISearchBar()
-    let tableData = ["Oban", "Mckenzie", "Four roses", "Whistlepig"]
+    let tableData = ["Oban", "Mckenzie", "Four Roses", "Whistlepig"]
     
     // Variables for searching:
     var filteredArray = [String]()
