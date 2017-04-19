@@ -68,11 +68,29 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.locationManager = CLLocationManager()
-        self.locationManager.delegate = self
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
+//        self.locationManager = CLLocationManager()
+//        self.locationManager.delegate = self
+//        self.locationManager.requestAlwaysAuthorization()
+//        self.locationManager.startUpdatingLocation()
+        
         placesClient = GMSPlacesClient.shared()
+        placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
+            if let error = error {
+                print("Pick Place error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let placeLikelihoodList = placeLikelihoodList {
+                for likelihood in placeLikelihoodList.likelihoods {
+                    let place = likelihood.place
+                    print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
+                    print("Current Place address \(place.formattedAddress)")
+                    print("Current Place attributions \(place.attributions)")
+                    print("Current PlaceID \(place.placeID)")
+                }
+            }
+        })
+        
         // Do any additional setup after loading the view, typically from a nib.
 //        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
 //        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
@@ -95,8 +113,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
             }
             
             print("Place name \(place.name)")
-            print("Place address \(place.formattedAddress ?? <#default value#>)")
-            print("Place attributions \(place.attributions ?? <#default value#>)")
+            
         })
     }
 

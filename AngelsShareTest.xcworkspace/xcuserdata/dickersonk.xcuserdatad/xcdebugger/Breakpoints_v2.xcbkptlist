@@ -22,31 +22,46 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AngelsShareTest.SecondViewController.nameLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "AngelsShareTest.SecondViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.SecondViewController"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514242721.987704"
+                  timestampString = "514319291.297051"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "42">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AngelsShareTest.SecondViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.SecondViewController"
+                  symbolName = "AngelsShareTest.SecondViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.SecondViewController"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514242721.990966"
+                  timestampString = "514319291.300591"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "70">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.SecondViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AngelsShareTest.SecondViewController&gt;"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
+                  timestampString = "514319291.303761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -56,11 +71,11 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514242721.99385"
+                  timestampString = "514319291.30665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "31">
                </Location>
             </Locations>
