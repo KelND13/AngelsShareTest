@@ -26,12 +26,12 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514319291.297051"
+                  timestampString = "514325585.344114"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "70">
+                  offsetFromSymbolStart = "69">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,7 +41,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514319291.300591"
+                  timestampString = "514325585.347251"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,7 +56,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514319291.303761"
+                  timestampString = "514325585.350005"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,12 +71,12 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514319291.30665"
+                  timestampString = "514325585.353766"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "31">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>

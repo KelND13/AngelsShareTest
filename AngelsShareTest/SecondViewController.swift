@@ -15,10 +15,6 @@ import CoreLocation
 class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
     var placePicker: GMSPlacePicker!
-    
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
-    
     var placesClient: GMSPlacesClient!
     var locationManager = CLLocationManager()
 
