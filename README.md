@@ -2,7 +2,7 @@
 
 Angel's Share (n): The amount of alcohol which evaporates from a cask during maturation.
 
-Angel's Share is built for whiskey enthusiasts.
+Angel's Share the app is built for whiskey enthusiasts.
 
 The first view allows the user to search an external database of whiskeys. 
 From that list the user can label a whiskey as 'thumbs up,' 'thumbs down', or 'flag' (for those they haven't tried yet)
