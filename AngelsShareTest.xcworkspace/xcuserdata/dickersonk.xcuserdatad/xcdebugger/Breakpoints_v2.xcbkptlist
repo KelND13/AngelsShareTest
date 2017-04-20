@@ -26,12 +26,12 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514325585.344114"
+                  timestampString = "514389467.238047"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "69">
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,7 +41,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514325585.347251"
+                  timestampString = "514389467.241068"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,7 +56,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514325585.350005"
+                  timestampString = "514389467.243697"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,12 +71,75 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514325585.353766"
+                  timestampString = "514389467.247318"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AngelsShareTest/AppDelegate.swift"
+            timestampString = "514388986.117604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.AppDelegate.__deallocating_deinit"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
+                  timestampString = "514389467.254235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.AppDelegate.__allocating_init () -&gt; AngelsShareTest.AppDelegate"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
+                  timestampString = "514389467.258183"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
+                  timestampString = "514389467.260597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "22">
                </Location>
             </Locations>
          </BreakpointContent>

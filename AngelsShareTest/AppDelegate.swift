@@ -23,6 +23,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      //   GMSServices.provideAPIKey("AIzaSyCrDeUHE51WMf23annSoTC_WYTbi6KrSMY")
         GMSPlacesClient.provideAPIKey("AIzaSyChRa0g9ZpPTw0HbU7_llgPHF6xNuwyskg")
         GMSServices.provideAPIKey("AIzaSyChRa0g9ZpPTw0HbU7_llgPHF6xNuwyskg")
+        
+        // set up onboarding:
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var whichView: UIViewController
+        
+
+        if (UserDefaults.standard.value(forKey: "email") as? String) == nil {
+            // show the onboarding screen because email is nil
+            whichView = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+        } else {
+            // show the main screen
+            whichView = storyboard.instantiateInitialViewController()!
+            //exclamation point ok because we definitely have a main viewcontroller
+        }
+        
+        self.window?.rootViewController = whichView
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

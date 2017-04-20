@@ -14,7 +14,9 @@ import CoreLocation
 
 class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
-    var placePicker: GMSPlacePicker!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var placePicker: GMSPlacePicker?
     var placesClient: GMSPlacesClient!
     var locationManager = CLLocationManager()
 
@@ -64,10 +66,6 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.locationManager = CLLocationManager()
-//        self.locationManager.delegate = self
-//        self.locationManager.requestAlwaysAuthorization()
-//        self.locationManager.startUpdatingLocation()
         
         placesClient = GMSPlacesClient.shared()
         placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
@@ -86,6 +84,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
         })
+        
         
         // Do any additional setup after loading the view, typically from a nib.
 //        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
@@ -109,9 +108,20 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
             }
             
             print("Place name \(place.name)")
-            
+            print("Place address \(place.formattedAddress)")
+            print("Place attributions \(place.attributions)")
         })
-    }
+        
+ }
+    
+//    // places a map view in sydney with a marker:
+//    override func loadView() {
+//        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+//        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+//        view = mapView
+//        let marker = GMSMarker()
+//        marker.map = mapView
+//    }
 
         
     override func didReceiveMemoryWarning() {
