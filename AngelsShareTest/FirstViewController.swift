@@ -11,13 +11,16 @@ import UIKit
 class FirstViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var welcomeBackLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         createSearchBar()
-        
+        if let email = UserDefaults.standard.value(forKey: "email") {
+            welcomeBackLabel.text = "Welcome, \(email)!"
+        }
     }
     
     func createSearchBar() {

@@ -26,12 +26,12 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514389467.238047"
+                  timestampString = "514414200.990026"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "70">
+                  offsetFromSymbolStart = "69">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,7 +41,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514389467.241068"
+                  timestampString = "514414200.993589"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,7 +56,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514389467.243697"
+                  timestampString = "514414200.997595"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,12 +71,12 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514389467.247318"
+                  timestampString = "514414201.001373"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "31">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -104,7 +104,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "514389467.254235"
+                  timestampString = "514414201.008173"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -119,7 +119,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "514389467.258183"
+                  timestampString = "514414201.012418"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -134,7 +134,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "514389467.260597"
+                  timestampString = "514414201.014255"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"

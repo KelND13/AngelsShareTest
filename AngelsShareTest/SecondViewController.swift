@@ -10,11 +10,9 @@ import UIKit
 import GoogleMaps
 import GooglePlacePicker
 import GooglePlaces
-import CoreLocation
+//import CoreLocation
 
 class SecondViewController: UIViewController, CLLocationManagerDelegate {
-    
-    @IBOutlet weak var nameLabel: UILabel!
     
     var placePicker: GMSPlacePicker?
     var placesClient: GMSPlacesClient!

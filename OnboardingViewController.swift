@@ -25,6 +25,13 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         return false
     }
 
+    @IBAction func `continue`(_ sender: UIButton) {
+        
+        UserDefaults.standard.set(email.text, forKey: "email")
+        performSegue(withIdentifier: "toMainSegue", sender: self)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
