@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class OnboardingViewController: UIViewController, UITextFieldDelegate {
 
@@ -30,7 +31,19 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func `continue`(_ sender: UIButton) {
         
+        UserDefaults.standard.set(username.text, forKey: "username")
         UserDefaults.standard.set(email.text, forKey: "email")
+        
+        if let email = email.text {
+            if let password = password.text {
+                
+        //firebase create user:
+                FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+                    // ...
+                }
+        }
+        }
+        
         performSegue(withIdentifier: "toMainSegue", sender: self)
         
     }

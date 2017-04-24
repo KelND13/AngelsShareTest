@@ -7,4 +7,5 @@ target 'AngelsShareTest' do
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 end

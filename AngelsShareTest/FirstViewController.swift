@@ -18,8 +18,8 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         createSearchBar()
-        if let email = UserDefaults.standard.value(forKey: "email") {
-            welcomeBackLabel.text = "Welcome, \(email)!"
+        if let username = UserDefaults.standard.value(forKey: "username") {
+            welcomeBackLabel.text = "Welcome, \(username)!"
         }
     }
     
