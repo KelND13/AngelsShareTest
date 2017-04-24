@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //Sets up Google PlacePicker API:
-        GMSPlacesClient.provideAPIKey("AIzaSyChRa0g9ZpPTw0HbU7_llgPHF6xNuwyskg")
-        GMSServices.provideAPIKey("AIzaSyChRa0g9ZpPTw0HbU7_llgPHF6xNuwyskg")
+        GMSPlacesClient.provideAPIKey("AIzaSyAlpuxPVRGtdbrZcC_-ywOnNcOLFFxXRiI")
+        GMSServices.provideAPIKey("AIzaSyAlpuxPVRGtdbrZcC_-ywOnNcOLFFxXRiI")
         
         //Sets up Firebase app:
         FIRApp.configure()
