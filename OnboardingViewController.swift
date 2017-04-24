@@ -19,9 +19,9 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        self.email.delegate = self
+        
+        // starting up firebase for user auth:
+        FIRApp.configure()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -31,18 +31,18 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func `continue`(_ sender: UIButton) {
         
-        UserDefaults.standard.set(username.text, forKey: "username")
-        UserDefaults.standard.set(email.text, forKey: "email")
+        // grab the user input:
+        let email = self.email.text
+        let password = self.password.text
         
-        if let email = email.text {
-            if let password = password.text {
-                
-        //firebase create user:
-                FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
-                    // ...
-                }
-        }
-        }
+        FIRAuth.auth()?.createUser(withEmail: email!, password: password!, completion: { (user: FIRUser?, error) in
+            if error == nil {
+                print("success")
+            } else {
+                print("registration failed")
+            }
+        
+        })
         
         performSegue(withIdentifier: "toMainSegue", sender: self)
         

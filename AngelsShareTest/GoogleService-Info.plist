@@ -7,17 +7,17 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>721705636254-a60f3c4mju39h97rciiq9fuc35tqidei.apps.googleusercontent.com</string>
+	<string>721705636254-8bet75np1pgbc6he9sk71pdkdbqktq8m.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.721705636254-a60f3c4mju39h97rciiq9fuc35tqidei</string>
+	<string>com.googleusercontent.apps.721705636254-8bet75np1pgbc6he9sk71pdkdbqktq8m</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDQmCcaY_YUDMwKXd8A1lcGL8UqTdNFxgw</string>
+	<string>AIzaSyD_ztQyCIHJBQ2xCPDYOUiKLa-edLlmEPY</string>
 	<key>GCM_SENDER_ID</key>
 	<string>721705636254</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>me.kellydickerson</string>
+	<string>me.kellydickerson.AngelsShareTest</string>
 	<key>PROJECT_ID</key>
 	<string>angelsshare-1492006366388</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:721705636254:ios:0e0c73f43217ecb6</string>
+	<string>1:721705636254:ios:7e16faffc6ef1bbc</string>
 	<key>DATABASE_URL</key>
 	<string>https://angelsshare-1492006366388.firebaseio.com</string>
 </dict>
