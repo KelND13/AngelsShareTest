@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B11084C0BF6C2941C46B236 /* libPods-AngelsShareTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E84204FA96A38F024EA /* libPods-AngelsShareTest.a */; };
+		735F3DDCED82023303F122D2 /* Pods_AngelsShareTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DC58C57297A38C0B17763 /* Pods_AngelsShareTest.framework */; };
 		D52D5D241EA8EE2C00A5D2E8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */; };
+		D561B1511EAE2FC300E44CD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D561B1501EAE2FC300E44CD4 /* GoogleService-Info.plist */; };
 		D57DB1EE1EA5441300A2A7F1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */; };
 		D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */; };
 		D5FF1A6A1E9FAEF7009528A1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A691E9FAEF7009528A1 /* FirstViewController.swift */; };
@@ -38,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03781E84204FA96A38F024EA /* libPods-AngelsShareTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AngelsShareTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12936E7F121CD380A7E69C06 /* Pods-AngelsShareTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelsShareTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelsShareTest/Pods-AngelsShareTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = ../OnboardingViewController.swift; sourceTree = "<group>"; };
+		D561B1501EAE2FC300E44CD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		D5FF1A641E9FAEF6009528A1 /* AngelsShareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelsShareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		D5FF1A851E9FAEF7009528A1 /* AngelsShareTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngelsShareTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FF1A891E9FAEF7009528A1 /* AngelsShareTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngelsShareTestUITests.swift; sourceTree = "<group>"; };
 		D5FF1A8B1E9FAEF7009528A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8DC58C57297A38C0B17763 /* Pods_AngelsShareTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngelsShareTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB39F0CDCCB4D4FA773E75E6 /* Pods-AngelsShareTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelsShareTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelsShareTest/Pods-AngelsShareTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B11084C0BF6C2941C46B236 /* libPods-AngelsShareTest.a in Frameworks */,
+				735F3DDCED82023303F122D2 /* Pods_AngelsShareTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +99,7 @@
 		9610CC3AD77A89ECC1AC1F32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03781E84204FA96A38F024EA /* libPods-AngelsShareTest.a */,
+				EA8DC58C57297A38C0B17763 /* Pods_AngelsShareTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +138,7 @@
 				D5FF1A701E9FAEF7009528A1 /* Assets.xcassets */,
 				D5FF1A721E9FAEF7009528A1 /* LaunchScreen.storyboard */,
 				D5FF1A751E9FAEF7009528A1 /* Info.plist */,
+				D561B1501EAE2FC300E44CD4 /* GoogleService-Info.plist */,
 			);
 			path = AngelsShareTest;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FF1A741E9FAEF7009528A1 /* LaunchScreen.storyboard in Resources */,
+				D561B1511EAE2FC300E44CD4 /* GoogleService-Info.plist in Resources */,
 				D5FF1A711E9FAEF7009528A1 /* Assets.xcassets in Resources */,
 				D5FF1A6F1E9FAEF7009528A1 /* Main.storyboard in Resources */,
 			);
