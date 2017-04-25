@@ -7,20 +7,31 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
-class FirstViewController: UIViewController, UISearchBarDelegate {
+
+class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var welcomeBackLabel: UILabel!
+    
+    @IBOutlet weak var searchTableView: UITableView!
+    
+    var ref: FIRDatabaseReference!
+    let cellId = "cellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        //create search bar:
         createSearchBar()
-        if let username = UserDefaults.standard.value(forKey: "username") {
-            welcomeBackLabel.text = "Welcome, \(username)!"
-        }
+//        if let username = UserDefaults.standard.value(forKey: "username") {
+////            welcomeBackLabel.text = "Welcome, \(username)!"
+//        }
+        
+        //set up firebase:
+        ref = FIRDatabase.database().reference()
+        fetchWhiskey()
+
     }
     
     func createSearchBar() {
@@ -28,7 +39,15 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
         
     }
-
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func fetchWhiskey() {
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

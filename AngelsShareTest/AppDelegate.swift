@@ -11,6 +11,7 @@ import GoogleMaps
 import GooglePlaces
 import GooglePlacePicker
 import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,23 +26,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyAlpuxPVRGtdbrZcC_-ywOnNcOLFFxXRiI")
         
         // set up onboarding:
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        var whichView: UIViewController
-//        
-//
-//        if (UserDefaults.standard.value(forKey: "email") as? String) == nil {
-//            // show the onboarding screen because email is nil
-//            whichView = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
-//        } else {
-//            // show the main screen
-//            whichView = storyboard.instantiateInitialViewController()!
-//            //exclamation point ok because we definitely have a main viewcontroller
-//        }
-//        
-//        self.window?.rootViewController = whichView
-//        self.window?.makeKeyAndVisible()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var whichView: UIViewController
         
+
+        if (UserDefaults.standard.value(forKey: "email") as? String) == nil {
+            // show the onboarding screen because email is nil
+            whichView = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+        } else {
+            // show the main screen
+            whichView = storyboard.instantiateInitialViewController()!
+            //exclamation point ok because we definitely have a main viewcontroller
+        }
+        
+        self.window?.rootViewController = whichView
+        self.window?.makeKeyAndVisible()
+        
+        FIRApp.configure()
         return true
     }
 
