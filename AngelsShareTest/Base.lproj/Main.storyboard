@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--First View Table View Controller-->
         <scene sceneID="7AB-kd-HJ7">
             <objects>
                 <tableViewController id="v8V-B7-umj" customClass="FirstViewTableViewController" customModule="AngelsShareTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,11 +41,11 @@
                             <outlet property="delegate" destination="v8V-B7-umj" id="64E-bA-m3k"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" image="searchIcon" id="hDg-Cf-o65"/>
+                    <navigationItem key="navigationItem" id="vAg-hh-X81"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feq-Qi-FKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="-761"/>
+            <point key="canvasLocation" x="1759.2" y="-761.46926536731644"/>
         </scene>
         <!--Nearby whiskey-->
         <scene sceneID="wg7-f3-ORb">
@@ -188,7 +188,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="v8V-B7-umj" kind="relationship" relationship="viewControllers" id="C2K-Fs-Cah"/>
+                        <segue destination="Tle-JG-bIj" kind="relationship" relationship="viewControllers" id="C2K-Fs-Cah"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="a5m-dL-n4t" kind="relationship" relationship="viewControllers" id="WNb-ue-cdt"/>
                     </connections>
@@ -203,7 +203,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a5m-dL-n4t" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Your whiskey" image="cocktailIcon" id="j5H-2x-reF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FZF-6t-vSS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FZF-6t-vSS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -215,6 +215,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNY-6O-sbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="885.60000000000002" y="568.9655172413793"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="pJ0-Bz-by1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tle-JG-bIj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="searchIcon" id="hDg-Cf-o65"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rSG-5L-fJk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v8V-B7-umj" kind="relationship" relationship="rootViewController" id="gCf-dh-R9a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXf-tR-Bf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-761.46926536731644"/>
         </scene>
     </scenes>
     <resources>

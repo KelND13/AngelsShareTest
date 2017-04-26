@@ -23,14 +23,14 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         super.viewDidLoad()
         
-        createSearchBar()
+        createWhiskeySearchBar()
         
         //Display Firebase whiskey data:
     }
     
-    func createSearchBar() {
+    func createWhiskeySearchBar() {
         
-        whiskeySearchBar.showsCancelButton = true
+        whiskeySearchBar.showsCancelButton = false
         whiskeySearchBar.placeholder = "Search whiskeys"
         whiskeySearchBar.delegate = self
         
