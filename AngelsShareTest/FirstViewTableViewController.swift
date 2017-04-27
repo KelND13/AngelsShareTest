@@ -19,7 +19,7 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
     ]
     
     //variables for searching:
-    var ref: FIRAuthStateDidChangeListenerHandle?
+   // var ref: FIRAuthStateDidChangeListenerHandle?
     var filteredDict = [String]()
     var shouldShowResults = false
     
@@ -86,7 +86,7 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
             cell.textLabel?.text = filteredDict[indexPath.row]
             return cell
         } else {
-            cell.textLabel?.text = whiskeyList[indexPath.row]
+            cell.textLabel?.text = nil
             return cell
         }
     }
