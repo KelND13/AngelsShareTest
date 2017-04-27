@@ -13,7 +13,7 @@ import FirebaseAuth
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     let searchBar = UISearchBar()
-    let tableData = ["Oban", "Mckenzie", "Four Roses", "Whistlepig"]
+    let tableData = [String]()
     
     // Variables for searching:
     var filteredArray = [String]()

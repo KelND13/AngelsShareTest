@@ -13,6 +13,7 @@
 		D57DB1EE1EA5441300A2A7F1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */; };
 		D5D1A4301EAE9C95000C1555 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D1A42F1EAE9C95000C1555 /* GoogleService-Info.plist */; };
 		D5DD9EDB1EB11CBA00BD7084 /* WhiskeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD9EDA1EB11CBA00BD7084 /* WhiskeyItem.swift */; };
+		D5DD9EE11EB246B000BD7084 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */; };
 		D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */; };
 		D5FF1A6C1E9FAEF7009528A1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */; };
 		D5FF1A6F1E9FAEF7009528A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FF1A6D1E9FAEF7009528A1 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		D5D1A42F1EAE9C95000C1555 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5DD9EDA1EB11CBA00BD7084 /* WhiskeyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiskeyItem.swift; sourceTree = "<group>"; };
+		D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		D5FF1A641E9FAEF6009528A1 /* AngelsShareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelsShareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */,
 				D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */,
 				D5FF1A6D1E9FAEF7009528A1 /* Main.storyboard */,
+				D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */,
 				D54BA4341EAF957900F86BBC /* FirstViewTableViewController.swift */,
 				D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */,
 				D5FF1A701E9FAEF7009528A1 /* Assets.xcassets */,
@@ -359,6 +362,7 @@
 				D54BA4351EAF957900F86BBC /* FirstViewTableViewController.swift in Sources */,
 				D57DB1EE1EA5441300A2A7F1 /* SearchTableViewController.swift in Sources */,
 				D5DD9EDB1EB11CBA00BD7084 /* WhiskeyItem.swift in Sources */,
+				D5DD9EE11EB246B000BD7084 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

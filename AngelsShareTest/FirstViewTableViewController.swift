@@ -13,9 +13,35 @@ import FirebaseAuth
 class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
     
     let whiskeySearchBar = UISearchBar()
-    var whiskeyList: [String] = ["Oban",
-    "Tullamore Dew",
-    "Jameson"
+    var whiskeyList: [String] = ["Oban, Single Malt Scotch",
+        "Tullamore Dew, Irish whisky",
+        "Jameson, Irish whisky",
+        "Bushmills, Irish whisky",
+        "Kilbeggan, Irish whisky",
+        "Glenfiddich, Single Malt Scotch",
+        "Glenlivet, Single Malt Scotch",
+        "Highland Park, Single Malt Scotch",
+        "Laphroaig, Single Malt Scotch",
+        "Macallan, Single Malt Scotch",
+        "Dalmore, Single Malt Scotch",
+        "Glenmorangie, Single Malt Scotch",
+        "Talisker, Single Malt Scotch",
+        "Lagavulin, Single Malt Scotch",
+        "Glenrothes, Single Malt Scotch",
+        "Johnnie Walker, Blended Scotch",
+        "Dewars, Blended Scotch",
+        "Jim Beam, American whiskey",
+        "Wild Turkey, American whiskey",
+        "Knob Creek, American whiskey",
+        "Maker's Mark, American whiskey",
+        "Jack Daniels, American whiskey",
+        "Bulleit, American whiskey",
+        "Woodford Reserve, American whiskey",
+        "Buffalo Trace, American whiskey",
+        "Four Roses, American whiskey",
+        "High West Double Rye, Rye",
+        "Taketsuru, Japanese whiskey",
+        "Bruichladdich, Single Malt Scotch"
     ]
     
     //variables for searching:
