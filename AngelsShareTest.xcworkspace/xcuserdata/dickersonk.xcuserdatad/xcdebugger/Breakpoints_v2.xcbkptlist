@@ -25,8 +25,8 @@
                   symbolName = "AngelsShareTest.SecondViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.SecondViewController"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514924139.972673"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
+                  timestampString = "514993286.3988"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -40,8 +40,8 @@
                   symbolName = "AngelsShareTest.SecondViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.SecondViewController"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514924139.97601"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
+                  timestampString = "514993286.401694"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -55,8 +55,8 @@
                   symbolName = "AngelsShareTest.SecondViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AngelsShareTest.SecondViewController&gt;"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514924139.979071"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
+                  timestampString = "514993286.405211"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -70,8 +70,8 @@
                   symbolName = "AngelsShareTest.SecondViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AngelsShareTest.SecondViewController&gt;"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "514924139.982449"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
+                  timestampString = "514993286.40866"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -103,8 +103,8 @@
                   symbolName = "AngelsShareTest.AppDelegate.__deallocating_deinit"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "514924139.990466"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
+                  timestampString = "514993286.415633"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -118,8 +118,8 @@
                   symbolName = "AngelsShareTest.AppDelegate.__allocating_init () -&gt; AngelsShareTest.AppDelegate"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "514924139.994302"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
+                  timestampString = "514993286.420793"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -133,8 +133,8 @@
                   symbolName = "main"
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dickersonk/Desktop/testing/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "514924139.996849"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
+                  timestampString = "514993286.422695"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -158,6 +158,38 @@
             endingLineNumber = "39"
             landmarkName = "continue(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AngelsShareTest/FirstViewTableViewController.swift"
+            timestampString = "514993285.175156"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AngelsShareTest/FirstViewTableViewController.swift"
+            timestampString = "514993285.175156"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "FirstViewTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -8,16 +8,22 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
+import FirebaseAuth
 
 class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
     
     let whiskeySearchBar = UISearchBar()
+    var whiskeyList: [String] = ["Oban",
+    "Tullamore Dew",
+    "Jameson"
+    ]
+    
+    //variables for searching:
+    var ref: FIRAuthStateDidChangeListenerHandle?
+    var filteredDict = [String]()
+    var shouldShowResults = false
     
     
-    //Firebase database variables:
-//    let ref = FIRDatabase.database().reference()
-//    let whiskeyRef = FIRDatabase.database().reference(withPath: "whiskeys")
     
     override func viewDidLoad() {
         
@@ -25,7 +31,6 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         createWhiskeySearchBar()
         
-        //Display Firebase whiskey data:
     }
     
     func createWhiskeySearchBar() {
@@ -36,11 +41,56 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         self.navigationItem.titleView = whiskeySearchBar
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredDict = whiskeyList.filter({ (whiskeys: String) -> Bool in
+            return whiskeys.range(of: searchText) != nil
+        })
+        
+        if searchText != "" {
+            shouldShowResults = true
+            self.tableView.reloadData()
+        } else {
+            shouldShowResults = false
+            self.tableView.reloadData()
+        }
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        
+        if shouldShowResults {
+            return filteredDict.count
+        } else {
+            return whiskeyList.count
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        
+        if shouldShowResults {
+            cell.textLabel?.text = filteredDict[indexPath.row]
+            return cell
+        } else {
+            cell.textLabel?.text = whiskeyList[indexPath.row]
+            return cell
+        }
+    }
+
     
     
     // Dismiss the searchbar keyboard two ways:
@@ -58,15 +108,6 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
    
 
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
 
     /*
     // Override to support conditional editing of the table view.
