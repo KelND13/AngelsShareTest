@@ -51,6 +51,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         let config = GMSPlacePickerConfig(viewport: nil)
         let placePicker = GMSPlacePicker(config: config)
         
+        
         placePicker.pickPlace(callback: { (place, error) -> Void in
             if let error = error {
                 print("Pick Place error: \(error.localizedDescription)")
