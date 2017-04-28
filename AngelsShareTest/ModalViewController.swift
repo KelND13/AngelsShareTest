@@ -10,10 +10,12 @@ import UIKit
 
 class ModalViewController: UIViewController {
 
+    @IBOutlet weak var dataDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +24,8 @@ class ModalViewController: UIViewController {
     }
     
     @IBAction func addToFavorites(_ sender: Any) {
+        
+       
     }
 
     // Dismissses the modal view:

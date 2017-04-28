@@ -14,6 +14,8 @@ import GooglePlaces
 
 class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var getPlaces: UIButton!
+    
     var placePicker: GMSPlacePicker?
     var placesClient: GMSPlacesClient!
     var locationManager = CLLocationManager()
@@ -40,6 +42,9 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
             }
         })
         
+        //set color of the UIButton:
+        getPlaces.backgroundColor = UIColor(red: 2.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
+
         
         // Do any additional setup after loading the view, typically from a nib.
 //        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
@@ -47,9 +52,13 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
     }
     
+    
+    
     @IBAction func getCurrentPlace(_ sender: UIButton) {
         let config = GMSPlacePickerConfig(viewport: nil)
         let placePicker = GMSPlacePicker(config: config)
+        
+        //set button color:
         
         
         placePicker.pickPlace(callback: { (place, error) -> Void in
@@ -69,6 +78,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         })
         
  }
+    
     
 //    // places a map view in sydney with a marker:
 //    override func loadView() {

@@ -12,13 +12,13 @@ import UIKit
 
 class WhiskeyItem: NSObject {
     
-    let wName: String
-    let wType: String
+    let name: String
+    let completed: Bool
     
-    init(wName: String, wType: String) {
+    init(name: String) {
         
-        self.wName = wName
-        self.wType = wType
+        self.name = name
+        self.completed = false
     }
     
     
