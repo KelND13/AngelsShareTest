@@ -13,6 +13,9 @@ import FirebaseAuth
 class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
     
     let whiskeySearchBar = UISearchBar()
+    
+    var modalLabelValue: String!
+    
     var whiskeyList: [String] = ["Oban, Single Malt Scotch",
         "Tullamore Dew, Irish whisky",
         "Jameson, Irish whisky",
@@ -57,8 +60,7 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         createWhiskeySearchBar()
         
-        
-        
+               
     }
     
     func createWhiskeySearchBar() {
@@ -120,7 +122,11 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toModalView", sender: self)
+    }
+    
     
     
     // Dismiss the searchbar keyboard two ways:
@@ -184,11 +190,8 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         if segue.identifier == "toModalView" {
             let newVC = segue.destination as! ModalViewController
-           
-            if (sender as? UITableViewCell) != nil {
-                let cellIndexPath = tableView.dequeueReusableCell(withIdentifier: "Cell")
-                newVC.dataDisplay = cellIndexPath?.textLabel
-            }
+            let tableIndex = tableView.indexPathForSelectedRow?.row
+            newVC.dataDisplayName = whiskeyList[tableIndex!]
         }
     }
  

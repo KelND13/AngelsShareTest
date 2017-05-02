@@ -26,7 +26,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "515108159.075536"
+                  timestampString = "515429532.253835"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -41,7 +41,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "515108159.078377"
+                  timestampString = "515429532.256662"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,7 +56,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "515108159.081032"
+                  timestampString = "515429532.259233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,7 +71,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/SecondViewController.swift"
-                  timestampString = "515108159.084379"
+                  timestampString = "515429532.262071"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -104,7 +104,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "515108159.092697"
+                  timestampString = "515429532.269379"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -119,7 +119,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "515108159.097925"
+                  timestampString = "515429532.272992"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -134,7 +134,7 @@
                   moduleName = "AngelsShareTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/AppDelegate.swift"
-                  timestampString = "515108159.100254"
+                  timestampString = "515429532.27483"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -167,11 +167,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AngelsShareTest/FirstViewTableViewController.swift"
-            timestampString = "515107404.686027"
+            timestampString = "515364568.510288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -183,13 +183,121 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AngelsShareTest/FirstViewTableViewController.swift"
-            timestampString = "514997985.571467"
+            timestampString = "515364568.510288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "FirstViewTableViewController"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AngelsShareTest/FirstViewTableViewController.swift"
+            timestampString = "515364055.448159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "FirstViewTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.FirstViewTableViewController.__deallocating_deinit"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/FirstViewTableViewController.swift"
+                  timestampString = "515429532.290342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.FirstViewTableViewController.init (style : __C.UITableViewStyle) -&gt; AngelsShareTest.FirstViewTableViewController"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/FirstViewTableViewController.swift"
+                  timestampString = "515429532.292669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.FirstViewTableViewController.__allocating_init (style : __C.UITableViewStyle) -&gt; AngelsShareTest.FirstViewTableViewController"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/FirstViewTableViewController.swift"
+                  timestampString = "515429532.295311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.FirstViewTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.FirstViewTableViewController"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/FirstViewTableViewController.swift"
+                  timestampString = "515429532.297121"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.FirstViewTableViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AngelsShareTest.FirstViewTableViewController"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/FirstViewTableViewController.swift"
+                  timestampString = "515429532.298743"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AngelsShareTest.FirstViewTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AngelsShareTest.FirstViewTableViewController&gt;"
+                  moduleName = "AngelsShareTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dickersonk/Documents/AngelsShareTest/AngelsShareTest/FirstViewTableViewController.swift"
+                  timestampString = "515429532.304924"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

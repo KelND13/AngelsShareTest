@@ -11,11 +11,16 @@ import UIKit
 class ModalViewController: UIViewController {
 
     @IBOutlet weak var dataDisplay: UILabel!
+    var dataDisplayName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        dataDisplay.text = dataDisplayName
     }
 
     override func didReceiveMemoryWarning() {
