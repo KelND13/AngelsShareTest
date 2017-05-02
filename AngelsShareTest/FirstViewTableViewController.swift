@@ -60,8 +60,10 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         createWhiskeySearchBar()
         
+        self.tableView.backgroundColor = UIColor(red: 178.0/255.0, green: 101.0/255.0, blue: 51.0/255.0, alpha: 1.0)
                
     }
+
     
     func createWhiskeySearchBar() {
         
@@ -122,6 +124,12 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         
         
     }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(red: 255.0/255.0, green: 189.0/255.0, blue: 147.0/255.0, alpha: 1.0)
+    }
+    
+    //Segue handlers:
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "toModalView", sender: self)
