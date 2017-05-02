@@ -127,6 +127,17 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         self.performSegue(withIdentifier: "toModalView", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "toModalView" {
+            let newVC = segue.destination as! ModalViewController
+            let tableIndex = tableView.indexPathForSelectedRow?.row
+            newVC.dataDisplayName = filteredDict[tableIndex!]
+        }
+    }
+    
     
     
     // Dismiss the searchbar keyboard two ways:
@@ -184,15 +195,6 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "toModalView" {
-            let newVC = segue.destination as! ModalViewController
-            let tableIndex = tableView.indexPathForSelectedRow?.row
-            newVC.dataDisplayName = whiskeyList[tableIndex!]
-        }
-    }
+    
  
 }
