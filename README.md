@@ -2,7 +2,7 @@
 
 Angel's Share (n): The amount of alcohol which evaporates from a cask during maturation.
 
-Angel's Share the app is built for whiskey enthusiasts.
+An app designed for whiskey enthusiasts.
 
 The first view allows the user to search an external database of whiskeys. 
 From that list the user can label a whiskey as 'thumbs up,' 'thumbs down', or 'flag' (for those they haven't tried yet)
@@ -10,9 +10,9 @@ If user has already tried and/or labeled a whiskey from the main search list, th
 
 The second view displays a Google Maps API for finding nearby whiskey places
 
-The third view displays 'thumbs up' whiskeys (This may change in future iterations)
+The third view displays 'thumbs up,' or favorited, whiskeys (This may change in future iterations)
 
-Onboarding: Asks for email address and username and password
+Onboarding: Asks for email address and password - authenticated with Firebase
 
 Dependencies:
 The app relies on Google Maps API, a Firebase database, and cocoa pods (for Google Maps and Firebase)
