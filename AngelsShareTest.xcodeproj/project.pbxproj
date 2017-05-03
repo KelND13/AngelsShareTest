@@ -14,6 +14,7 @@
 		D5D1A4301EAE9C95000C1555 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D1A42F1EAE9C95000C1555 /* GoogleService-Info.plist */; };
 		D5DD9EDB1EB11CBA00BD7084 /* WhiskeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD9EDA1EB11CBA00BD7084 /* WhiskeyItem.swift */; };
 		D5DD9EE11EB246B000BD7084 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */; };
+		D5E90A5A1EBA486C00A43044 /* AngelsShareTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5E90A581EBA486C00A43044 /* AngelsShareTest.xcdatamodeld */; };
 		D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */; };
 		D5FF1A6C1E9FAEF7009528A1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */; };
 		D5FF1A6F1E9FAEF7009528A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FF1A6D1E9FAEF7009528A1 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		D5D1A42F1EAE9C95000C1555 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5DD9EDA1EB11CBA00BD7084 /* WhiskeyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiskeyItem.swift; sourceTree = "<group>"; };
 		D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		D5E90A591EBA486C00A43044 /* AngelsShareTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AngelsShareTest.xcdatamodel; sourceTree = "<group>"; };
 		D5FF1A641E9FAEF6009528A1 /* AngelsShareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelsShareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FF1A671E9FAEF7009528A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */,
 				D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */,
 				D5FF1A6D1E9FAEF7009528A1 /* Main.storyboard */,
+				D5E90A581EBA486C00A43044 /* AngelsShareTest.xcdatamodeld */,
 				D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */,
 				D54BA4341EAF957900F86BBC /* FirstViewTableViewController.swift */,
 				D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */,
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FF1A6C1E9FAEF7009528A1 /* SecondViewController.swift in Sources */,
+				D5E90A5A1EBA486C00A43044 /* AngelsShareTest.xcdatamodeld in Sources */,
 				D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */,
 				D52D5D241EA8EE2C00A5D2E8 /* OnboardingViewController.swift in Sources */,
 				D54BA4351EAF957900F86BBC /* FirstViewTableViewController.swift in Sources */,
@@ -636,6 +640,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5E90A581EBA486C00A43044 /* AngelsShareTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5E90A591EBA486C00A43044 /* AngelsShareTest.xcdatamodel */,
+			);
+			currentVersion = D5E90A591EBA486C00A43044 /* AngelsShareTest.xcdatamodel */;
+			path = AngelsShareTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D5FF1A5C1E9FAEF6009528A1 /* Project object */;
 }

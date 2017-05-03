@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import CoreData
+
 
 class ModalViewController: UIViewController {
 
     @IBOutlet weak var dataDisplay: UILabel!
     var dataDisplayName = String()
     
+    //core data for favorites list:
+    
+    
+    // MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         // set color of label:
         dataDisplay.backgroundColor = UIColor(red: 2.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,9 +37,17 @@ class ModalViewController: UIViewController {
     
     @IBAction func addToFavorites(_ sender: Any) {
         
-       
+        let successAlert = UIAlertController(title: "Success!", message: "Added to favorites", preferredStyle: .alert)
+        let dismissal = UIAlertAction(title: "OK", style: .default, handler: nil)
+        successAlert.addAction(dismissal)
+        present(successAlert, animated: true, completion: nil)
+        
+        
     }
-
+    
+    // Save to core data:
+    
+    
     // Dismissses the modal view:
     @IBAction func cancel(_ sender: Any) {
         

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FaveWhiskeys+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:FaveWhiskeys+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:AngelsShareTest.xcodeproj">
    </FileRef>
    <FileRef
