@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseAuth
 
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
@@ -18,8 +16,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     // Variables for searching:
     var filteredArray = [String]()
     var shouldShowSearchResults = false
-    var handle: FIRAuthStateDidChangeListenerHandle?
-
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,25 +106,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         
     }
     
-    //Firebase authentication
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // [START auth_listener]
-        handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
-            // [START_EXCLUDE]
-//            self.setTitleDisplay(user)
-//            self.tableView.reloadData()
-            // [END_EXCLUDE]
-        }
-        // [END auth_listener]
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        // [START remove_auth_listener]
-        FIRAuth.auth()?.removeStateDidChangeListener(handle!)
-        // [END remove_auth_listener]
-    }
     
 
     /*
