@@ -118,7 +118,7 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
             cell.textLabel?.text = filteredDict[indexPath.row]
             return cell
         } else {
-            cell.textLabel?.text = nil
+            cell.textLabel?.text = whiskeyList[indexPath.row]
             return cell
         }
         
@@ -142,7 +142,14 @@ class FirstViewTableViewController: UITableViewController, UISearchBarDelegate {
         if segue.identifier == "toModalView" {
             let newVC = segue.destination as! ModalViewController
             let tableIndex = tableView.indexPathForSelectedRow?.row
-            newVC.dataDisplayName = filteredDict[tableIndex!]
+            
+            // if user uses search, display modal view from the filtered list
+            // if user does not use search, display from the unfiltered list
+            if shouldShowResults == true {
+                newVC.dataDisplayName = filteredDict[tableIndex!]
+            } else {
+                newVC.dataDisplayName = whiskeyList[tableIndex!]
+            }
         }
     }
     
