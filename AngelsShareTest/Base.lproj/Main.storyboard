@@ -90,16 +90,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XZw-gd-L0H" id="QUT-1M-VNg"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="30p-wg-bzj" appends="YES" id="TEJ-pJ-fip"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="newWhiskey" destination="8Cy-Ze-pOH" id="WmS-f9-yPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vf7-w8-fRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="30p-wg-bzj">
+                    <connections>
+                        <action selector="dissmissKeyboard:" destination="XZw-gd-L0H" id="WdH-zi-3a7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2532" y="-1448.7256371814094"/>
         </scene>
@@ -318,7 +330,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a5m-dL-n4t" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Your whiskey" image="cocktailIcon" id="j5H-2x-reF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FZF-6t-vSS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FZF-6t-vSS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -337,7 +349,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tle-JG-bIj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="searchIcon" id="hDg-Cf-o65"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rSG-5L-fJk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rSG-5L-fJk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

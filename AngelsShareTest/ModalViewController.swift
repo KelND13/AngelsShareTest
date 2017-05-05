@@ -15,8 +15,7 @@ class ModalViewController: UIViewController {
     @IBOutlet weak var dataDisplay: UILabel!
     var dataDisplayName = String()
     
-    //core data for favorites list:
-    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
     
     // MARK: Functions
     override func viewDidLoad() {
@@ -42,19 +41,6 @@ class ModalViewController: UIViewController {
         successAlert.addAction(dismissal)
         present(successAlert, animated: true, completion: nil)
         
-        //save:
-        let entityDescription = NSEntityDescription.entity(forEntityName: "FaveWhiskeys", in: managedObjectContext)
-        let fave = FaveWhiskeys(entity: entityDescription!, insertInto: managedObjectContext)
-        
-        fave.name = dataDisplay.text
-        
-        do {
-            try managedObjectContext.save()
-            dataDisplay.text = ""
-            print("Saved")
-        } catch {
-            print("Error")
-        }
     }
     
     // Save to core data:

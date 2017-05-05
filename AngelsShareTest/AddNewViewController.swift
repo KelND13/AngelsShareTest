@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddNewViewController: UIViewController {
+class AddNewViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var newWhiskey: UITextField!
     
@@ -23,10 +23,28 @@ class AddNewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Keyboard dismissal functions:
+    @IBAction func dissmissKeyboard(_ sender: UITapGestureRecognizer) {
+        newWhiskey.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ newWhiskey: UITextField) -> Bool {
+        newWhiskey.resignFirstResponder()
+        return true
+    }
+    
+    // Add new whiskey functionality:
+    
     @IBAction func add(_ sender: Any) {
+        // Alert the user that the action worked:
+        let successAlert = UIAlertController(title: "Success!", message: "New whiskey added", preferredStyle: .alert)
+        let dismissal = UIAlertAction(title: "OK", style: .default, handler: nil)
+        successAlert.addAction(dismissal)
+        present(successAlert, animated: true, completion: nil)
         
     }
-
+    
+    // Cancel and dismiss the modal view:
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
