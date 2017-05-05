@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		735F3DDCED82023303F122D2 /* Pods_AngelsShareTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DC58C57297A38C0B17763 /* Pods_AngelsShareTest.framework */; };
 		D52D5D241EA8EE2C00A5D2E8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */; };
+		D541CCEF1EBD26770073488A /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D541CCEE1EBD26770073488A /* AddNewViewController.swift */; };
 		D54BA4351EAF957900F86BBC /* FirstViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54BA4341EAF957900F86BBC /* FirstViewTableViewController.swift */; };
 		D57DB1EE1EA5441300A2A7F1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */; };
 		D5D1A4301EAE9C95000C1555 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D1A42F1EAE9C95000C1555 /* GoogleService-Info.plist */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		12936E7F121CD380A7E69C06 /* Pods-AngelsShareTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelsShareTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelsShareTest/Pods-AngelsShareTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = ../OnboardingViewController.swift; sourceTree = "<group>"; };
+		D541CCEE1EBD26770073488A /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		D54BA4341EAF957900F86BBC /* FirstViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewTableViewController.swift; sourceTree = "<group>"; };
 		D57DB1ED1EA5441300A2A7F1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		D5D1A42F1EAE9C95000C1555 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				D52D5D231EA8EE2C00A5D2E8 /* OnboardingViewController.swift */,
 				D5FF1A6B1E9FAEF7009528A1 /* SecondViewController.swift */,
 				D5FF1A6D1E9FAEF7009528A1 /* Main.storyboard */,
+				D541CCEE1EBD26770073488A /* AddNewViewController.swift */,
 				D5E90A581EBA486C00A43044 /* AngelsShareTest.xcdatamodeld */,
 				D5DD9EE01EB246B000BD7084 /* ModalViewController.swift */,
 				D54BA4341EAF957900F86BBC /* FirstViewTableViewController.swift */,
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FF1A6C1E9FAEF7009528A1 /* SecondViewController.swift in Sources */,
+				D541CCEF1EBD26770073488A /* AddNewViewController.swift in Sources */,
 				D5E90A5A1EBA486C00A43044 /* AngelsShareTest.xcdatamodeld in Sources */,
 				D5FF1A681E9FAEF7009528A1 /* AppDelegate.swift in Sources */,
 				D52D5D241EA8EE2C00A5D2E8 /* OnboardingViewController.swift in Sources */,
