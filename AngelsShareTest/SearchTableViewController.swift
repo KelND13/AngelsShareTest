@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
@@ -14,8 +15,12 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     var tableData = [Whiskey]()
     
     // Variables for searching:
-    var filteredArray = [String]()
-    var shouldShowSearchResults = false
+//    var filteredArray = [String]()
+//    var shouldShowSearchResults = false
+    
+    // Variables for core data:
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var faveWhiskeyTable: [FaveWhiskeys] = []
    
     
     override func viewDidLoad() {
@@ -26,13 +31,14 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         createSearchBar()
         
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        loadTestWhiskeys()
+        // Prepares table for loading core data:
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getWhiskeys()
+        tableView.reloadData()
     }
     
     func createSearchBar() {
@@ -43,25 +49,29 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         
         self.navigationItem.titleView = searchBar
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // Core data fetcher:
+    func getWhiskeys() {
+        do {
+            faveWhiskeyTable = try context.fetch(FaveWhiskeys.fetchRequest())
+        } catch {
+            print("Fetch failed")
+        }
+        
+        tableView.reloadData()
+    }
+    
+    
     // Functions for adding search functionality:
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        filteredArray = tableData.filter({ (whiskeys: String?) -> Bool in
-//                return whiskeys!.range(of: searchText) != nil
-//        })
-//        
-//        if searchText != "" {
-//            shouldShowSearchResults = true
-//            self.tableView.reloadData()
-//        } else {
-//            shouldShowSearchResults = false
-//            self.tableView.reloadData()
-//        }
+        
     }
 
     // MARK: - Table view data source
@@ -71,39 +81,40 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        
-        return tableData.count
-    
-    }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
-
-        let whiskey = tableData[indexPath.row]
-        cell.textLabel?.text = whiskey.name
-//        if shouldShowSearchResults {
-//            cell.textLabel?.text = filteredArray[indexPath.row]
-//            return cell
-//        } else {
-//            cell.textLabel?.text = tableData[indexPath.row]
-//            return cell
-//        }
+        let cell = UITableViewCell()
+        let whiskey = faveWhiskeyTable[indexPath.row]
         
+        if let newWhiskey = whiskey.name {
+            cell.textLabel?.text = newWhiskey
+        }
         return cell
         
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        
+        return faveWhiskeyTable.count
+        
+    }
+
+    // Deletes a saved favorite whiskey from Core Data:
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            print("delete")
-            self.tableData.remove(at: indexPath.row)
-            self.tableView.reloadData()
-            // ^ this wont work with core data! - need to delete from core data first
+            let whiskey = faveWhiskeyTable[indexPath.row]
+            context.delete(whiskey)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            do {
+                faveWhiskeyTable = try context.fetch(FaveWhiskeys.fetchRequest())
+            } catch {
+                print("Fetch failed")
+            }
         }
     
+        tableView.reloadData()
     }
         
     // Dismiss the searchbar keyboard two ways:
@@ -112,7 +123,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        shouldShowSearchResults = true
         searchBar.endEditing(true)
         self.tableView.reloadData()
         
@@ -120,13 +130,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    // Testing data population:
-    func loadTestWhiskeys() {
-        let whiskey1 = Whiskey(name: "Oban", fave: true)
-        let whiskey2 = Whiskey(name: "Glenlevit", fave: true)
-        
-        tableData += [whiskey1, whiskey2]
-    }
     
     
 

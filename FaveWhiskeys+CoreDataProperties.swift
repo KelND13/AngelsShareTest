@@ -2,7 +2,7 @@
 //  FaveWhiskeys+CoreDataProperties.swift
 //  
 //
-//  Created by Kelly Dickerson on 5/3/17.
+//  Created by Kelly Dickerson on 5/10/17.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -17,7 +17,6 @@ extension FaveWhiskeys {
         return NSFetchRequest<FaveWhiskeys>(entityName: "FaveWhiskeys");
     }
 
-    @NSManaged public var favorite: Bool
     @NSManaged public var name: String?
 
 }

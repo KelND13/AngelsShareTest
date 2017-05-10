@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NewWhiskeyViewController: UIViewController {
     
@@ -25,8 +26,15 @@ class NewWhiskeyViewController: UIViewController {
     
        
     @IBAction func add(_ sender: Any) {
-        // Core data??
+        // Links data model to core data
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newWhiskey = FaveWhiskeys(context: context)
+        newWhiskey.name = newWhiskeyTextField.text
         
+        // Saves to core data:
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        let _ = navigationController?.popViewController(animated: true)
     }
 
     @IBAction func cancel(_ sender: Any) {

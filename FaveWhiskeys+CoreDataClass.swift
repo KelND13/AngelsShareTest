@@ -2,7 +2,7 @@
 //  FaveWhiskeys+CoreDataClass.swift
 //  
 //
-//  Created by Kelly Dickerson on 5/3/17.
+//  Created by Kelly Dickerson on 5/10/17.
 //
 //  This file was automatically generated and should not be edited.
 //
