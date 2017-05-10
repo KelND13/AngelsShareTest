@@ -84,7 +84,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
         let whiskey = tableData[indexPath.row]
         cell.textLabel?.text = whiskey.name
-        
 //        if shouldShowSearchResults {
 //            cell.textLabel?.text = filteredArray[indexPath.row]
 //            return cell
@@ -97,6 +96,16 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("delete")
+            self.tableData.remove(at: indexPath.row)
+            self.tableView.reloadData()
+            // ^ this wont work with core data! - need to delete from core data first
+        }
+    
+    }
+        
     // Dismiss the searchbar keyboard two ways:
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         searchBar.endEditing(true)
