@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Whiskey.swift">
+   </FileRef>
+   <FileRef
       location = "group:FaveWhiskeys+CoreDataClass.swift">
    </FileRef>
    <FileRef

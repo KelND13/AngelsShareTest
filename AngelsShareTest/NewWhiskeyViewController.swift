@@ -9,6 +9,8 @@
 import UIKit
 
 class NewWhiskeyViewController: UIViewController {
+    
+    @IBOutlet weak var newWhiskeyTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,21 @@ class NewWhiskeyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func add(_ sender: Any) {
+        // Core data??
+        
+    }
 
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //dismiss keyboard
+    
+    func dismissKeyboard(newWhiskeyTextField: UITextField) {
+        newWhiskeyTextField.endEditing(true)
+        resignFirstResponder()
+    }
     /*
     // MARK: - Navigation
 

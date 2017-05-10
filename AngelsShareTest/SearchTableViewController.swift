@@ -11,7 +11,7 @@ import UIKit
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     let searchBar = UISearchBar()
-    let tableData = [String]()
+    var tableData = [Whiskey]()
     
     // Variables for searching:
     var filteredArray = [String]()
@@ -31,6 +31,8 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        loadTestWhiskeys()
     }
     
     func createSearchBar() {
@@ -49,17 +51,17 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
     // Functions for adding search functionality:
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredArray = tableData.filter({ (whiskeys: String) -> Bool in
-                return whiskeys.range(of: searchText) != nil
-        })
-        
-        if searchText != "" {
-            shouldShowSearchResults = true
-            self.tableView.reloadData()
-        } else {
-            shouldShowSearchResults = false
-            self.tableView.reloadData()
-        }
+//        filteredArray = tableData.filter({ (whiskeys: String?) -> Bool in
+//                return whiskeys!.range(of: searchText) != nil
+//        })
+//        
+//        if searchText != "" {
+//            shouldShowSearchResults = true
+//            self.tableView.reloadData()
+//        } else {
+//            shouldShowSearchResults = false
+//            self.tableView.reloadData()
+//        }
     }
 
     // MARK: - Table view data source
@@ -72,25 +74,27 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        if shouldShowSearchResults {
-            return filteredArray.count
-        } else {
-            return tableData.count
-        }
+        return tableData.count
+    
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
 
+        let whiskey = tableData[indexPath.row]
+        cell.textLabel?.text = whiskey.name
         
-        if shouldShowSearchResults {
-            cell.textLabel?.text = filteredArray[indexPath.row]
-            return cell
-        } else {
-            cell.textLabel?.text = tableData[indexPath.row]
-            return cell
-        }
+//        if shouldShowSearchResults {
+//            cell.textLabel?.text = filteredArray[indexPath.row]
+//            return cell
+//        } else {
+//            cell.textLabel?.text = tableData[indexPath.row]
+//            return cell
+//        }
+        
+        return cell
+        
     }
     
     // Dismiss the searchbar keyboard two ways:
@@ -104,6 +108,15 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.reloadData()
         
         
+    }
+    
+    
+    // Testing data population:
+    func loadTestWhiskeys() {
+        let whiskey1 = Whiskey(name: "Oban", fave: true)
+        let whiskey2 = Whiskey(name: "Glenlevit", fave: true)
+        
+        tableData += [whiskey1, whiskey2]
     }
     
     
