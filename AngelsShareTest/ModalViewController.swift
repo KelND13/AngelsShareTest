@@ -37,9 +37,13 @@ class ModalViewController: UIViewController {
     @IBAction func addToFavorites(_ sender: Any) {
         
         let successAlert = UIAlertController(title: "Success!", message: "Added to favorites", preferredStyle: .alert)
-        let dismissal = UIAlertAction(title: "OK", style: .default, handler: nil)
-        successAlert.addAction(dismissal)
-        present(successAlert, animated: true, completion: nil)
+        self.present(successAlert, animated: true, completion: nil)
+        
+        let time = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            successAlert.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
+        }
         
     }
     
