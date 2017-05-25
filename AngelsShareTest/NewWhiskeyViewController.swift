@@ -35,6 +35,16 @@ class NewWhiskeyViewController: UIViewController {
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
         let _ = navigationController?.popViewController(animated: true)
+        
+        //Dismiss the view:
+        let successAlert = UIAlertController(title: "Success!", message: "Added to your whiskeys", preferredStyle: .alert)
+        self.present(successAlert, animated: true, completion: nil)
+        
+        let time = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            successAlert.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 
     @IBAction func cancel(_ sender: Any) {
