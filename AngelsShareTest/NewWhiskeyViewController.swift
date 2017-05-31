@@ -17,6 +17,8 @@ class NewWhiskeyViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(NewWhiskeyViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,9 +55,8 @@ class NewWhiskeyViewController: UIViewController {
     
     //dismiss keyboard
     
-    func dismissKeyboard(newWhiskeyTextField: UITextField) {
-        newWhiskeyTextField.endEditing(true)
-        resignFirstResponder()
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     /*
     // MARK: - Navigation

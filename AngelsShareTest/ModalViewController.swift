@@ -12,6 +12,8 @@ import CoreData
 
 class ModalViewController: UIViewController {
 
+    @IBOutlet weak var addToFavorites: UIButton!
+    @IBOutlet weak var cancel: UIButton!
     @IBOutlet weak var dataDisplay: UILabel!
     var dataDisplayName = String()
     
@@ -21,8 +23,9 @@ class ModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // set color of label:
-        dataDisplay.backgroundColor = UIColor(red: 2.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
-        
+        dataDisplay.backgroundColor = UIColor(red: 38.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
+        addToFavorites.backgroundColor = UIColor.green
+        cancel.backgroundColor = UIColor.red
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,7 +52,7 @@ class ModalViewController: UIViewController {
     
     // Save to core data:
     func saveToFavorites(name: String) {
-        
+    
     }
     
     
