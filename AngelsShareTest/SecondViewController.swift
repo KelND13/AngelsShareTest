@@ -40,7 +40,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         })
         
         //set color of the UIButton:
-        getPlaces.backgroundColor = UIColor(red: 2.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
+        //getPlaces.backgroundColor = UIColor(red: 2.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
 
         
         // Do any additional setup after loading the view, typically from a nib.

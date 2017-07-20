@@ -23,9 +23,9 @@ class ModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // set color of label:
-        dataDisplay.backgroundColor = UIColor(red: 38.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
-        addToFavorites.backgroundColor = UIColor.green
-        cancel.backgroundColor = UIColor.red
+       // dataDisplay.backgroundColor = UIColor(red: 38.0/255.0, green: 172.0/255.0, blue: 178.0/255.0, alpha: 1.0)
+        //addToFavorites.backgroundColor = UIColor.green
+        //cancel.backgroundColor = UIColor.red
     }
     
     override func viewWillAppear(_ animated: Bool) {
