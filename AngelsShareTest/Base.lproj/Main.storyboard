@@ -125,7 +125,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find whisk(e)y near me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.67450980390000004" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getCurrentPlace:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PTf-Pr-MZF"/>
@@ -328,7 +328,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a5m-dL-n4t" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Your whiskey" image="cocktailIcon" id="j5H-2x-reF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FZF-6t-vSS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FZF-6t-vSS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -347,7 +347,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tle-JG-bIj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="searchIcon" id="hDg-Cf-o65"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rSG-5L-fJk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rSG-5L-fJk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
