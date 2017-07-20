@@ -39,6 +39,15 @@ class ModalViewController: UIViewController {
     
     @IBAction func addToFavorites(_ sender: Any) {
         
+        //Link UILabel to core data model:
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newFaveWhiskey = FaveWhiskeys(context: context)
+        newFaveWhiskey.name = dataDisplay.text
+        
+        //Save to core data:
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        //Dismiss the view:
         let successAlert = UIAlertController(title: "Success!", message: "Added to favorites", preferredStyle: .alert)
         self.present(successAlert, animated: true, completion: nil)
         
