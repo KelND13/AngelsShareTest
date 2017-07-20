@@ -22,6 +22,8 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         
         // starting up firebase for user auth:
         FIRApp.configure()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(NewWhiskeyViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -47,6 +49,10 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         
         performSegue(withIdentifier: "toMainSegue", sender: self)
         
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {
