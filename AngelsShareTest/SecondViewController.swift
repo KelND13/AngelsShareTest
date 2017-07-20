@@ -35,9 +35,6 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
                 for likelihood in placeLikelihoodList.likelihoods {
                     let place = likelihood.place
                     print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
-                    print("Current Place address \(place.formattedAddress)")
-                    print("Current Place attributions \(place.attributions)")
-                    print("Current PlaceID \(place.placeID)")
                 }
             }
         })
@@ -73,8 +70,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
             }
             
             print("Place name \(place.name)")
-            print("Place address \(place.formattedAddress)")
-            print("Place attributions \(place.attributions)")
+            
         })
         
  }

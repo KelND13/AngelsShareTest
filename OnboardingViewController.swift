@@ -26,7 +26,8 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
-        return false
+        
+        return true
     }
 
     @IBAction func `continue`(_ sender: UIButton) {

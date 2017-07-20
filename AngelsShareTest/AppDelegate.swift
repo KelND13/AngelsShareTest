@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = whichView
         self.window?.makeKeyAndVisible()
         
-        FIRApp.configure()
+//        FIRApp.configure()
         return true
     }
     

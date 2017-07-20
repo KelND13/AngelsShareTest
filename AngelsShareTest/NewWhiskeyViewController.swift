@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewWhiskeyViewController: UIViewController {
+class NewWhiskeyViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var newWhiskeyTextField: UITextField!
 
@@ -24,7 +24,11 @@ class NewWhiskeyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-       
+    func textFieldShouldReturn(newWhiskeyTextField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     @IBAction func add(_ sender: Any) {
         // Links data model to core data
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -51,12 +55,7 @@ class NewWhiskeyViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    //dismiss keyboard
     
-    func dismissKeyboard(newWhiskeyTextField: UITextField) {
-        newWhiskeyTextField.endEditing(true)
-        resignFirstResponder()
-    }
     /*
     // MARK: - Navigation
 
