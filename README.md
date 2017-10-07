@@ -8,11 +8,13 @@ An app designed for whiskey enthusiasts.
 
 The first view allows the user to search an external database of whiskeys. 
 From that list the user can label a whiskey as 'thumbs up,' 'thumbs down', or 'flag' (for those they haven't tried yet)
-If user has already tried and/or labeled a whiskey from the main search list, that label will show up in the search results
+If user has already tried and/or labeled a whiskey from the main search list, that label will show up in the search results. You can also save a whiskey to your favorites list displayed in another tab.
 
-The second view displays a Google Maps API for finding nearby whiskey places
+![Demo] (https://user-images.githubusercontent.com/15390830/31308999-4860eb7a-ab4d-11e7-9936-d7082cc99542.gif)
 
-The third view displays 'thumbs up,' or favorited, whiskeys (This may change in future iterations)
+
+A map view displays a Google Maps API for finding nearby whiskey places
+
 
 Onboarding: Asks for email address and password - authenticated with Firebase
 
