@@ -8,6 +8,8 @@ An app designed for whiskey enthusiasts.
 
 The first view allows the user to search an external database of whiskeys. From that list the user can add a whiskey to their favorites list or 'flag' (for those they haven't tried yet).
 
+![Demo](https://user-images.githubusercontent.com/15390830/31309323-702efffc-ab52-11e7-9fb0-846a06002a13.gif)
+
 A map view displays a Google Maps API for finding nearby whiskey places
 
 ![Demo](https://user-images.githubusercontent.com/15390830/31309034-b6d4c04a-ab4d-11e7-9d24-aaff7c2b2062.gif)
