@@ -14,6 +14,8 @@ If user has already tried and/or labeled a whiskey from the main search list, th
 
 A map view displays a Google Maps API for finding nearby whiskey places
 
+![Demo](https://user-images.githubusercontent.com/15390830/31309034-b6d4c04a-ab4d-11e7-9d24-aaff7c2b2062.gif)
+
 Onboarding: Asks for email address and password - authenticated with Firebase
 
 Dependencies:
